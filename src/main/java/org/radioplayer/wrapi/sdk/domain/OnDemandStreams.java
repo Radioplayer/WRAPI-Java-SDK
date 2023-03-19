@@ -5,61 +5,60 @@ import java.util.Date;
 
 public class OnDemandStreams {
 
-	private StreamSource streamSource;
-	private String audioFormat;
+	private String player;
 	private BitRate bitRate;
-	private StreamRestriction streamRestriction;
-
+	private StreamSource streamSource;
 	private Date availableStart;
 	private Date availableStop;
-	
-	
-	public StreamSource getStreamSource() {
-		return streamSource;
-	}
-	
-	public void setStreamSource(StreamSource streamSource) {
-		this.streamSource = streamSource;
-	}
-	
-	public String getAudioFormat() {
-		return audioFormat;
-	}
-	
-	public void setAudioFormat(String audioFormat) {
-		this.audioFormat = audioFormat;
-	}
-	
+
+	private OnDemandStream[] audioStreams;
+
 	public BitRate getBitRate() {
 		return bitRate;
 	}
-	
+
 	public void setBitRate(BitRate bitRate) {
 		this.bitRate = bitRate;
 	}
-	
-	public StreamRestriction getStreamRestriction() {
-		return streamRestriction;
+
+	public StreamSource getStreamSource() {
+		return streamSource;
 	}
-	
-	public void setStreamRestriction(StreamRestriction streamRestriction) {
-		this.streamRestriction = streamRestriction;
+
+	public void setStreamSource(StreamSource streamSource) {
+		this.streamSource = streamSource;
 	}
-	
+
+	public OnDemandStream[] getAudioStreams() {
+		return audioStreams;
+	}
+
+	public void setAudioStreams(OnDemandStream[] audioStreams) {
+		this.audioStreams = audioStreams;
+	}
+
+	public String getPlayer() {
+		return player;
+	}
+
+	public void setPlayer(String player) {
+		this.player = player;
+	}
+
 	public Date getAvailableStart() {
 		return availableStart;
 	}
-	
+
 	public void setAvailableStart(Date availableStart) {
 		this.availableStart = availableStart;
 	}
-	
+
 	public Date getAvailableStop() {
 		return availableStop;
 	}
-	
+
 	public void setAvailableStop(Date availableStop) {
 		this.availableStop = availableStop;
 	}
-	
+
 }
